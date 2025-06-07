@@ -1,6 +1,13 @@
 
-namespace Parquet_read_web_API
+namespace ParquetReadWeb_API
 {
+    using ParquetReadWeb_API.Data;
+    using ParquetReadWeb_API.Interfaces.Data;
+    using ParquetReadWeb_API.Interfaces.Repositories;
+    using ParquetReadWeb_API.Interfaces.Services;
+    using ParquetReadWeb_API.Repositories;
+    using ParquetReadWeb_API.Services;
+
     public class Program
     {
         public static void Main(string[] args)
@@ -14,6 +21,22 @@ namespace Parquet_read_web_API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // Add CORS policy
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
+
+            builder.Services.AddMemoryCache();
+            builder.Services.AddScoped<IParquetDataRepository, ParquetDataRepository>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+            builder.Services.AddScoped<IDuckDbConnectionFactory, DuckDbConnectionFactory>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -22,6 +45,8 @@ namespace Parquet_read_web_API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
