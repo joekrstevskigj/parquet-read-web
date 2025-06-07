@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestParquetWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c69089c2b88ce7facf4e5444dc2725339e8a772")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abf3f1032a0b2e0b1310def54059a2f8cc6ad844")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestParquetWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestParquetWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
