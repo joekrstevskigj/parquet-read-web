@@ -3,24 +3,24 @@ backend/Parquet-read-web-API/bin/
 backend/Parquet-read-web-API/obj/
 
 # Logs
-frontend/Parquet_UI/logs
-frontend/Parquet_UI/*.log
-frontend/Parquet_UI/npm-debug.log*
-frontend/Parquet_UI/yarn-debug.log*
-frontend/Parquet_UI/yarn-error.log*
-frontend/Parquet_UI/pnpm-debug.log*
-frontend/Parquet_UI/lerna-debug.log*
+frontend/ParquetUI/logs
+frontend/ParquetUI/*.log
+frontend/ParquetUI/npm-debug.log*
+frontend/ParquetUI/yarn-debug.log*
+frontend/ParquetUI/yarn-error.log*
+frontend/ParquetUI/pnpm-debug.log*
+frontend/ParquetUI/lerna-debug.log*
 
-frontend/Parquet_UI/node_modules
-frontend/Parquet_UI/dist
-frontend/Parquet_UI/dist-ssr
-frontend/Parquet_UI/*.local
+frontend/ParquetUI/node_modules
+frontend/ParquetUI/dist
+frontend/ParquetUI/dist-ssr
+frontend/ParquetUI/*.local
 
 # Editor directories and files
-frontend/Parquet_UI/.vscode/*
-frontend/Parquet_UI/!.vscode/extensions.json
-frontend/Parquet_UI/.idea
-frontend/Parquet_UI/.DS_Store
+frontend/ParquetUI/.vscode/*
+frontend/ParquetUI/!.vscode/extensions.json
+frontend/ParquetUI/.idea
+frontend/ParquetUI/.DS_Store
 
 *.suo
 *.ntvs*
