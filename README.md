@@ -11,7 +11,7 @@ Once the first page is loaded, you will be presented with a list of employees.
 ![Screenshot 1](./assets_readme/Screenshot_1.png)
 
 Click the 'Funnel' button to see and apply filters.
-![Screenshot 2](.assets_readme/Screenshot_2.png)
+![Screenshot 2](./assets_readme/Screenshot_2.png)
 
 Click the 'Gear' Button to see options for using the search toolbar, e.g. which columns will be included in the search.
 ![Screenshot 3](./assets_readme/Screenshot_3.png)
