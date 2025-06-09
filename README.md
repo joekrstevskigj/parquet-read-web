@@ -8,17 +8,17 @@ The frontend is created with Vite React @lastest version and uses Bootstrap for 
 
 ## Usage
 Once the first page is loaded, you will be presented with a list of employees.
-![Screenshot 1](./src/assets/readme/screenshot_1.png)
+![Screenshot 1](./assets_readme/screenshot_1.png)
 
 Click the 'Funnel' button to see and apply filters.
-![Screenshot 2](./src/assets/readme/screenshot_2.png)
+![Screenshot 2](.assets_readme/screenshot_2.png)
 
 Click the 'Gear' Button to see options for using the search toolbar, e.g. which coulmns will be included in the search.
-![Screenshot 3](./src/assets/readme/screenshot_3.png)
+![Screenshot 3](./assets_readme/screenshot_3.png)
 
 At the bootom there is the pagination tool, which can be used to navigate trough the records and choose the page size.
-![Screenshot 4](./src/assets/readme/screenshot_4.png)
+![Screenshot 4](./assets_readme/screenshot_4.png)
 
 In mobile view, for smaller screens, the table will hide most of the links, and will display a new column - details, which when clicked will display all the details for the given row.
-![Screenshot 5](./src/assets/readme/screenshot_5.png)
-![Screenshot 6](./src/assets/readme/screenshot_6.png)
+![Screenshot 5](./assets_readme/screenshot_5.png)
+![Screenshot 6](./assets_readme/screenshot_6.png)
