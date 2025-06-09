@@ -15,5 +15,6 @@
         public string? Comments { get; set; }
         public string? Title { get; set; }
         public string? IpAddress { get; set; }
+        public string? CreditCard { get; set; }
     }
 }

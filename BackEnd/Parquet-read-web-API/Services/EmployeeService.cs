@@ -4,7 +4,6 @@ using ParquetReadWeb_API.DTOs.Requests;
 using ParquetReadWeb_API.DTOs.Responses;
 using ParquetReadWeb_API.Interfaces.Repositories;
 using ParquetReadWeb_API.Interfaces.Services;
-using ParquetReadWeb_API.Models;
 
 namespace ParquetReadWeb_API.Services
 {
@@ -24,11 +23,13 @@ namespace ParquetReadWeb_API.Services
         public async Task<EmployeesResultResponse> GetEmployeesAsync(EmployeesFilterRequest filter)
         {
             bool isInitialLoad =
-                filter.RegistrationDate == null &&
+                filter.RegistrationDateFrom == null &&
+                filter.RegistrationDateTo == null &&
                 string.IsNullOrEmpty(filter.Gender) &&
                 string.IsNullOrEmpty(filter.Country) &&
                 filter.Salary == null &&
-                filter.BirthDate == null &&
+                filter.BirthDateFrom == null &&
+                filter.BirthDateTo == null &&
                 string.IsNullOrEmpty(filter.SearchTerm) &&
                 (filter.Page == 1 || filter.Page == 0) &&
                 (filter.PageSize == 100 || filter.PageSize == 0);
@@ -69,7 +70,9 @@ namespace ParquetReadWeb_API.Services
                     Country = x.Country,
                     Salary = x.Salary,
                     RegistrationDate = x.RegistrationDate?.ToString("M/d/yyyy"),
-                    BirthDate = x.BirthDate?.ToString("M/d/yyyy")
+                    BirthDate = x.BirthDate?.ToString("M/d/yyyy"),
+                    CreditCard = x.CreditCard,
+                    IpAddress = x.IpAddress,
                 }).ToList(),
                 TotalRecordCount = result.TotalRecordCount,
             };

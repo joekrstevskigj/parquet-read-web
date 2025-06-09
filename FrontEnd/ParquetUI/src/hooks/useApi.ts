@@ -9,11 +9,11 @@ function useApi<T>(endpoint: string) {
 
         setLoading(true);
         setError(null);
+        setData(null);
 
         const completeEndpoint = method === 'GET' && body
             ? `${endpoint}?${body}`
             : endpoint;
-
 
         try {
             const response = await fetch(`${import.meta.env.VITE_API_URL}${completeEndpoint}`, {
@@ -23,7 +23,7 @@ function useApi<T>(endpoint: string) {
                 },
                 body: method === 'POST' ? JSON.stringify(body) : undefined,
             });
-
+                
             if (!response.ok) {
                 throw new Error(`Error: ${response.statusText}`);
             }

@@ -36,6 +36,7 @@ namespace ParquetReadWeb_API
             builder.Services.AddScoped<IParquetDataRepository, ParquetDataRepository>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             builder.Services.AddScoped<IDuckDbConnectionFactory, DuckDbConnectionFactory>();
+            builder.Services.AddScoped<IFilterDefaultsService, FilterDefaultsService>();
 
             var app = builder.Build();
 

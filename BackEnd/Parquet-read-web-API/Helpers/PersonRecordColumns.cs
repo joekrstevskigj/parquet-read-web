@@ -12,5 +12,7 @@
         public const string Salary = "salary";
         public const string RegistrationDate = "registration_dttm";
         public const string BirthDate = "birthdate";
+        public const string IpAddress = "ip_address";
+        public const string CreditCard = "cc";
     }
 }
